@@ -1,4 +1,4 @@
-//Reto 1          
+//Reto 1
 // var nota = [0];
 // let apr = 0;
 // let des = 0;
@@ -85,18 +85,118 @@
 // }
 
 //Reto 6          
-let lista1 = [0];
-let lista2 = [0];
-i = 0;
+// let lista1 = [0];
+// let lista2 = [0];
+// i = 0;
+// sum1=0;
+// sum2=0;
+// while (i < 15) {
+//   lista1[i] = Math.round(Math.random()*100);
+//   console.log(lista1[i]);
+//   sum1 += lista1[i];
+//   i++;
+// }
+// i=0;
+// while (i < 15) {
+//   lista2[i] = Math.round(Math.random()*100) ;
+//   console.log(lista2[i]);
+//   sum2 += lista2[i];
+//   i++;
+// }
 
-while (i < 15) {
-  lista1[i] = Math.random(0, 100);
-  console.log(lista1[i]);
-  i++;
-}
+// console.log(sum1);
+// console.log(sum2);
+// switch (true) {
+//   case (sum1 > sum2):
+//     console.log("Lista 1 mayor");
+//     break;
+//   case (sum2 > sum1 ):{
+//     console.log("Lista 2 mayor");
+//     break;
+//   }
+//   default:
+//     console.log("Listas iguales");
+//     break;
+// }
 
-while (i < 15) {
-  lista2[i] = Math.random(0, 100);
-  console.log(lista2[i]);
-  i++;
+//Reto 7          
+
+// i = 0;
+// list = [0];
+// let n = prompt("Cantidad de numeros a ingresar: ");
+
+// let par = 0;
+// let impar = 0;
+
+// while (i < parseFloat(n)) {
+//   let numb = prompt(`Ingrese el nro. ${i+1}:`);
+//   if (list[i] % 2 === 0) {
+//     par++;
+//   }else{
+//     impar++;
+//   }
+//   i++;
+// }
+
+// alert(`hay ${par} numeros pares y ${impar} impares`);
+
+//Reto 8         
+
+// let n = prompt("Indique la cantidad de triangulos:");
+// n = parseFloat(n);
+// sup = 0;
+// rsup = [0];
+// listab = [0];
+// listah = [0];
+// for (let i = 0; i < n; i++) {
+//   listab[i] = prompt(`Indique la base del triangulo nro.${i+1}: `);
+//   listab[i] = parseFloat(listab[i]);
+//   listah[i] = prompt(`Indique la altura del triangulo nro.${i+1}: `);
+//   listah[i] = parseFloat(listah[i]);
+//   rsup[i] = ((listab[i]*listah[i])/2);
+//   if (rsup[i] > 12) {
+//     sup++;
+//   }
+// }
+// for (let i = 0; i < n; i++) {
+//   alert(`El triangulo nro. ${i+1} tiene de base ${listab[i]} y de altura ${listah[i]} y su superficie es ${rsup[i]}`)
+// }
+// alert(`Hay ${sup} triangus que sus superficies son mayores a 12`)
+
+//Reto 9        
+
+// let n = 10;
+// let list = [0];
+// sum = 0;
+// for (let i = 0; i < n; i++) {
+//   list[i] = Math.round(Math.random() * 100);
+//   console.log(list[i]);
+// }
+// for (let i = n - 5; i < n; i++) {
+
+//   sum += list[i];
+//   console.log(list[i]);
+// }
+// alert(`La suma de los ultimos 5 numeros es ${sum}`)
+
+//Reto 10        
+
+// let tbl5 = [0];
+// let mult = 0
+// for (let i = 1; i <= 10; i++) {
+//   tbl5[i] = i * 5;
+//   console.log(`5 x ${i} = ${tbl5[i]}`);
+// }
+
+//Reto 11        
+let n = prompt("Ingrese el numero a multiplicar: ");
+n = parseFloat(n)
+let tbm = [0];
+if ((n <= 10) && (n >= 1)) {
+  for (let i = 1; i <= 13; i++) {
+    tbm[i] = i * n;
+    console.log(`${n} x ${i} = ${tbm[i]}`);
+  }
+} else {
+  alert("ingrese un valor entre el 1 y el 10")
 }
